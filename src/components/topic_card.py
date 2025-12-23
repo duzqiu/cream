@@ -7,7 +7,7 @@ class TopicCard(ft.Container):
         self.data = platform_data
         
         # 1. 设置卡片样式
-        self.height = 420
+        self.height = 400
         self.bgcolor = ft.Colors.WHITE
         self.border_radius = 8
         self.padding = 15
@@ -57,7 +57,7 @@ class TopicCard(ft.Container):
             else:
                 # 4名以后：灰色背景，深灰色数字
                 bg_color = ft.Colors.GREY_400 
-                text_color = ft.Colors.GREY_700
+                text_color = ft.Colors.WHITE
 
             # 【关键】创建数字序号的容器
             rank_badge = ft.Container(

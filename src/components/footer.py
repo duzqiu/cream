@@ -41,7 +41,7 @@ class Footer(ft.Container):
                 
                 # 第二行：版权信息
                 ft.Text(
-                    "© 2024 TopHub Clone. Powered by Flet & Python.", 
+                    "© 2026 今日热榜.仅供交流学习 Powered by Flet & Python.", 
                     size=12, 
                     color=ft.Colors.GREY_400
                 ),
