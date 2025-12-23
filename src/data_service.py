@@ -14,8 +14,9 @@ class DataService:
         raw_data = [
             {
                 "id": "1",
-                "title": "微博",
-                "icon": "https://file.ipadown.com/tophub/assets/images/media/s.weibo.com.png_50x50.png",
+                "title": "头条",
+                "subtitle": "Toutiao",
+                "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/5c/1f/92/5c1f9236-d2a2-c247-c546-50fc5cb02e85/AppIcon-News-0-0-1x_U007emarketing-0-8-0-sRGB-85-220.png/400x400ia-75.webp",
                 "items": [
                     {"title": "Flet 2.0 发布，支持更多原生特性", "url": "#", "hot": "500w"},
                     {"title": "Python 成为世界第一编程语言", "url": "#", "hot": "480w"},
@@ -37,8 +38,9 @@ class DataService:
             },
             {
                 "id": "2",
-                "title": "知乎",
-                "icon": "https://file.ipadown.com/tophub/assets/images/media/zhihu.com.png_50x50.png",
+                "title": "微博",
+                "subtitle": "Weibo",
+                "icon": "https://ts3.tc.mm.bing.net/th/id/OIP-C.uVXZhv-4LI6iYq4o1AV3AwAAAA?w=108&h=108&c=1&bgcl=7de8ac&r=0&o=7&cb=ucfimg1&dpr=2&pid=ImgRC&rm=3&ucfimg=1",
                 "items": [
                     {"title": "有哪些相见恨晚的 Python 库？", "url": "#", "hot": "2万关注"},
                     {"title": "全栈工程师的未来在哪里？", "url": "#", "hot": "1.5万关注"},
@@ -49,8 +51,9 @@ class DataService:
             },
             {
                 "id": "3",
-                "title": "GitHub Trending",
-                "icon": "https://file.ipadown.com/tophub/assets/images/media/github.com.png_50x50.png",
+                "title": "百度",
+                "subtitle": "Baidu",
+                "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/eb/c8/11/ebc81175-b935-4ce3-7ea9-44f6c979449a/AppIcon-0-0-1x_U007epad-0-1-0-0-sRGB-85-220.png/350x350.png?",
                 "items": [
                     {"title": "flet-dev/flet", "url": "#", "hot": "Start: 8k"},
                     {"title": "torvalds/linux", "url": "#", "hot": "Start: 150k"},
@@ -61,8 +64,9 @@ class DataService:
             },
              {
                 "id": "4",
-                "title": "少数派",
-                "icon": "https://file.ipadown.com/tophub/assets/images/media/sspai.com.png_50x50.png",
+                "title": "新浪",
+                "subtitle": "Sina",
+                "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/08/06/0f/08060fea-34cb-2e42-fbb0-88d445d665b9/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/350x350.png?",
                 "items": [
                     {"title": "本周值得关注的 iOS 应用", "url": "#", "hot": ""},
                     {"title": "如何构建你的第二大脑", "url": "#", "hot": ""},
@@ -73,8 +77,22 @@ class DataService:
             },
              {
                 "id": "5",
-                "title": "少数派121",
-                "icon": "https://file.ipadown.com/tophub/assets/images/media/sspai.com.png_50x50.png",
+                "title": "哔哩哔哩",
+                "subtitle": "Bilibili",
+                "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/74/c2/f5/74c2f550-18c1-4594-9f2a-1a7478416178/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/350x350.png?",
+                "items": [
+                    {"title": "本周值得关注的 iOS 应用", "url": "#", "hot": ""},
+                    {"title": "如何构建你的第二大脑", "url": "#", "hot": ""},
+                    {"title": "桌面改造计划 2.0", "url": "#", "hot": ""},
+                    {"title": "极简主义生活指南", "url": "#", "hot": ""},
+                    {"title": "摄影入门：构图的艺术", "url": "#", "hot": ""},
+                ]
+            },
+             {
+                "id": "6",
+                "title": "抖音",
+                "subtitle": "TikTok",
+                "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/66/2c/e7/662ce7f5-ae55-0929-64e2-94e249ed8dbc/AppIcon_TikTok-0-0-1x_U007epad-0-1-0-0-85-220.png/350x350.png?",
                 "items": [
                     {"title": "本周值得关注的 iOS 应用", "url": "#", "hot": ""},
                     {"title": "如何构建你的第二大脑", "url": "#", "hot": ""},
@@ -86,4 +104,4 @@ class DataService:
         ]
         
         # 为了演示效果，复制几份数据填满屏幕
-        return raw_data * 3
+        return raw_data * 2

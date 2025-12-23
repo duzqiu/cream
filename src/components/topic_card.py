@@ -28,9 +28,11 @@ class TopicCard(ft.Container):
                     width=24, height=24, border_radius=4, fit=ft.ImageFit.COVER,
                     error_content=ft.Icon(ft.Icons.IMAGE_NOT_SUPPORTED)
                 ),
+                # 主标题
                 ft.Text(self.data.get("title", "未命名"), weight=ft.FontWeight.BOLD, size=16, color="#333333"),
                 ft.Container(expand=True),
-                ft.Text(self.data.get("title", "未命名"), size=12, color=ft.Colors.BLUE_GREY_400),
+                # 副标题
+                ft.Text(self.data.get("subtitle", "未命名"), size=12, color=ft.Colors.BLUE_GREY_400),
             ],
             vertical_alignment=ft.CrossAxisAlignment.CENTER
         )
