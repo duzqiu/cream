@@ -30,7 +30,7 @@ class TopicCard(ft.Container):
                 ),
                 ft.Text(self.data.get("title", "未命名"), weight=ft.FontWeight.BOLD, size=16, color="#333333"),
                 ft.Container(expand=True),
-                ft.Text("订阅", size=12, color=ft.Colors.BLUE_GREY_400),
+                ft.Text(self.data.get("title", "未命名"), size=12, color=ft.Colors.BLUE_GREY_400),
             ],
             vertical_alignment=ft.CrossAxisAlignment.CENTER
         )

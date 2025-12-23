@@ -3,15 +3,15 @@ import flet as ft
 def get_app_bar():
     return ft.AppBar(
         # --- 1. 左侧区域优化 ---
-        # 减小左侧容器的 padding，从 20 减为 10
-        leading=ft.Container(
-            content=ft.Icon(ft.Icons.DASHBOARD, color=ft.Colors.BLACK87),
-            padding=ft.padding.only(left=15), 
-            on_click=lambda e: print("点击了菜单"),
-        ),
-        # 【关键修改】大幅减小 leading_width，给标题腾出空间
-        # 原来是 80，现在改为 50，足够容纳图标和边距
-        leading_width=50, 
+        # # 减小左侧容器的 padding，从 20 减为 10
+        # leading=ft.Container(
+        #     content=ft.Icon(ft.Icons.DASHBOARD, color=ft.Colors.BLACK87),
+        #     padding=ft.padding.only(left=15), 
+        #     on_click=lambda e: print("点击了菜单"),
+        # ),
+        # # 【关键修改】大幅减小 leading_width，给标题腾出空间
+        # # 原来是 80，现在改为 50，足够容纳图标和边距
+        # leading_width=50, 
         
         # --- 2. 标题区域优化 ---
         title=ft.Container(
@@ -26,7 +26,7 @@ def get_app_bar():
                 no_wrap=True
             ),
             # 减小左侧间距，使其紧凑
-            padding=ft.padding.only(left=5), 
+            padding=ft.padding.only(left=20), 
         ),
         
         # 减小标题与 leading 的默认间距
@@ -62,7 +62,7 @@ def get_app_bar():
             ft.IconButton(ft.Icons.NOTIFICATIONS_NONE, icon_color=ft.Colors.BLACK54, tooltip="通知"),
             
             # 用户头像
-            ft.IconButton(ft.Icons.PERSON_OUTLINE, icon_color=ft.Colors.BLACK54, tooltip="我的"),
+            # ft.IconButton(ft.Icons.PERSON_OUTLINE, icon_color=ft.Colors.BLACK54, tooltip="我的"),
             
             # 右侧对齐占位符（稍微减小以节省空间）
             ft.Container(width=10) 
