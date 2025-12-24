@@ -29,7 +29,7 @@ class TopicCard(ft.Container):
                     error_content=ft.Icon(ft.Icons.IMAGE_NOT_SUPPORTED)
                 ),
                 # 主标题
-                ft.Text(self.data.get("title", "未命名"), weight=ft.FontWeight.BOLD, size=16, color="#333333"),
+                ft.Text(self.data.get("platform", "未命名"), weight=ft.FontWeight.BOLD, size=16, color="#333333"),
                 ft.Container(expand=True),
                 # 副标题
                 ft.Text(self.data.get("subtitle", "未命名"), size=12, color=ft.Colors.BLUE_GREY_400),

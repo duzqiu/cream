@@ -21,11 +21,15 @@ class PlatformHeader(ft.Container):
         self.content = self._build_content()
 
     def _build_content(self):
-        # 1. 数据去重
+        # 1. 数据去重 (修改：使用 platform 字段作为唯一键)
         unique_platforms = {}
         for item in self.all_data:
-            if item["id"] not in unique_platforms:
-                unique_platforms[item["id"]] = item
+            # 获取平台名称，使用 .get 防止报错
+            p_name = item.get("platform")
+            
+            # 如果该平台名称还没出现过，且名称不为空，则加入字典
+            if p_name and p_name not in unique_platforms:
+                unique_platforms[p_name] = item
         platforms_list = list(unique_platforms.values())
 
         # 2. 构建平台列表
@@ -46,7 +50,7 @@ class PlatformHeader(ft.Container):
                         ),
                         # 名称
                         ft.Text(
-                            p.get("title", "未命名"), 
+                            p.get("platform", "未命名"), 
                             size=12, 
                             color="#333333", 
                             weight=ft.FontWeight.W_500,
@@ -59,7 +63,7 @@ class PlatformHeader(ft.Container):
                 padding=10,
                 border_radius=8,
                 ink=True,
-                on_click=lambda e, name=p.get('title'): print(f"切换到: {name}"),
+                on_click=lambda e, name=p.get('platform'): print(f"切换到: {name}"),
                 on_hover=self._handle_hover
             )
             platform_controls.append(item)
