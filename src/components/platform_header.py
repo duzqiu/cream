@@ -63,7 +63,7 @@ class PlatformHeader(ft.Container):
                 padding=10,
                 border_radius=8,
                 ink=True,
-                on_click=lambda e, name=p.get('platform'): print(f"切换到: {name}"),
+                # on_click=lambda e, name=p.get('platform'): print(f"切换到: {name}"),
                 on_hover=self._handle_hover
             )
             platform_controls.append(item)

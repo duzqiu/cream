@@ -1,5 +1,6 @@
 import flet as ft
 import random
+import logging
 
 class TopicCard(ft.Container):
     def __init__(self, platform_data):
@@ -97,7 +98,7 @@ class TopicCard(ft.Container):
                     vertical_alignment=ft.CrossAxisAlignment.CENTER
                 ),
                 padding=ft.padding.symmetric(vertical=8, horizontal=2),
-                on_click=lambda e, title=item.get("title"): print(f"点击了: {title}"),
+                on_click=lambda e, url=item.get("url"): e.page.launch_url(url) if url else logging.info(f"无链接"),
                 ink=True,
                 border_radius=4
             )

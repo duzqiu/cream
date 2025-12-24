@@ -132,7 +132,7 @@ def main(page: ft.Page):
     # --- 页面构建函数：构建分类页 ---
     def build_category_view(category_name):
         # 简单筛选逻辑
-        filtered_data = [item for item in all_data if category_name in item['title'] or len(item['items']) > 0]
+        filtered_data = [item for item in all_data if category_name in item['platform'] or len(item['items']) > 0]
         
         grid_items = []
         for item in filtered_data:
